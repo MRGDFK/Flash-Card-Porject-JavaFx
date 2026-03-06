@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="scenepane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication3.FXMLController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="423.0" opacity="0.68" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@folder/504c771a61b068a6ebc7b851c41ff3b5.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="449.0" layoutY="47.0" prefHeight="42.0" prefWidth="280.0" text="Flash Card">
+         <font>
+            <Font size="36.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#574f4f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnnewcard" alignment="CENTER" layoutX="547.0" layoutY="192.0" mnemonicParsing="false" onAction="#newcardclick" text="New Card" />
+      <Button fx:id="btnplaycard" alignment="CENTER" layoutX="548.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnplaycardclick" text="Play Card" />
+      <Button fx:id="btnexit" alignment="CENTER" layoutX="567.0" layoutY="351.0" mnemonicParsing="false" onAction="#exitclick" text="Exit" />
+   </children>
+</AnchorPane>
